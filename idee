@@ -9,3 +9,36 @@ Produits :
 	Intellij Idea
 	etc ...
 	+variantes
+
+
+Base de données :
+	Nous voulons une base pour stocker pour nos produits, nos clients, les commandes des clients.
+
+	Dans notre table client, on veut : adrMail(cléPrimaire), nom, prénom, adrFacturation, (mdp).
+	
+	Dans notre table produit, on veut : idProduit(cléPrimaire), nomProduit, descriptionProduit, prix, categorieProduit, pathImage.
+
+
+hypothèses : date = 1 jour et 1 commande par jour
+	Dans notre table commandes, on veut :  idProduit(cléPrimaire), adrMail(cléPrimaire), date(cléPrimaire), qteCommande
+
+
+
+
+
+
+#1er version
+table commandes
+clé primaire : idCommande, 
+montant,idPersonne#, date
+
+table produitsCommandes:
+cle primaire idCommande#, idProduit#,
+nbExemplaires
+
+
+
+
+
+F.A.Q
+panier = cookies = sessions
