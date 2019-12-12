@@ -5,7 +5,7 @@
             "<a href=\"" . 
             "index.php?nomFonction=read&arg1=" .
             $p->get('nomProduit') .
-            "\">" .
+            "&controller=produit\">" .
             htmlspecialchars($p->get('nomProduit')) .
             "</a>" .
             ": " .
@@ -19,6 +19,6 @@
     "</a>";
 
     echo "<br>";
-    echo "<a href=\"index.php?nomFonction=showPanier&arg1=\">".
+    echo '<a href="index.php?nomFonction=showPanier&arg1=&controller=produit">'.
     "Voir panier ?</a>";
     ?>

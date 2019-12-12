@@ -94,7 +94,6 @@ class ControllerProduit {
     }
     public static function error($a) {
         $action = $a;
-        echo $action;
         require_once File::build_path(["view","produit","error.php"]);
     }
 
@@ -157,6 +156,11 @@ class ControllerProduit {
         else {
                 echo "Panier vide";
         }
+
+        $controller = 'produit';
+        $view = 'panier';
+        $pagetitle = 'Panier';
+        require File::build_path(["view","view.php"]);
     }
 }
 ?>

@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-            echo "méthode ".$action." pas présent dans controllerProduit.php";
+            echo "méthode ".$action." pas présent dans ControllerProduit.php";
         ?>
     </body>
 </html>

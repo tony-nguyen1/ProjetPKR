@@ -27,8 +27,6 @@ class Model {
 		$tab_name = static::$objet;
 		$class_name = "Model".ucfirst($tab_name);
 
-		echo $tab_name;
-
 		try {
 	    	$rep = Model::$pdo->query("SELECT * FROM ".$tab_name.";");
 	    	$rep->setFetchMode(PDO::FETCH_CLASS, $class_name);
@@ -53,10 +51,6 @@ class Model {
 	    $sql = "SELECT * from ".$tab_name." WHERE ".$primary_key."=:nom_tag";
 	    // Préparation de la requête
 	    $req_prep = Model::$pdo->prepare($sql);
-
-echo $tab_name;
-	    echo $primary_value;
-	    echo $sql;
 
 	    $values = array(
 	        "nom_tag" => $primary_value,

@@ -1,6 +1,5 @@
 <?php
 
-        var_dump($prod);
 
     echo htmlspecialchars($prod->get('adrMail')); 
     echo "<br>\n";

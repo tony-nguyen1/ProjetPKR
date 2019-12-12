@@ -1,9 +1,9 @@
 <?php
 require_once File::build_path(["controller","ControllerClient.php"]);
 require_once File::build_path(["controller","ControllerProduit.php"]);
+require_once File::build_path(["controller","ControllerCommande.php"]);
 
-
-$controller = "produit";
+$controller = "commande";
 $action = "readAll";
 $arg = "123";
 
@@ -20,7 +20,6 @@ if (isset($_GET["nomFonction"])) {
 }
 
 $controller_class = "Controller".ucfirst($controller);
-
 
 if (class_exists($controller_class)) {
 
