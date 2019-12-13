@@ -3,7 +3,7 @@ require_once File::build_path(["controller","ControllerClient.php"]);
 require_once File::build_path(["controller","ControllerProduit.php"]);
 require_once File::build_path(["controller","ControllerCommande.php"]);
 
-$controller = "commande";
+$controller = "produit";
 $action = "readAll";
 $arg = "123";
 

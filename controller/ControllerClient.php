@@ -46,9 +46,7 @@ class ControllerClient {
         $mdp2 = $_GET["mdp2"];
 
         if (strcmp($mdp,$mdp2) == 0) {
-            echo "mdp identique";
-            echo $mdp;
-            echo Security::chiffrer($mdp);
+            $mdp = Security::chiffrer($mdp);
         }
         else {
             echo "mdp different";
@@ -66,6 +64,25 @@ class ControllerClient {
 
         $client->save($values);
         ControllerClient::readAll();
+    }
+
+    public static function connect() {
+        $controller = 'client';
+        $view = 'connect';
+        $pagetitle = 'Connection';
+        require File::build_path(["view","view.php"]);
+    }
+
+    public static function connected() {
+        $verification = Security::checkPassword($_GET["login"],Security::chiffrer($_GET["mdp"]));
+
+        if ($verification == true) {
+
+            $_SESSION['login'] = $_GET["login"];
+            echo $_SESSION['login'];
+            
+            ControllerClient::read($_GET["login"]);
+        }
     }
 }
 ?>

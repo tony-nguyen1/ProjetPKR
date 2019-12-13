@@ -9,7 +9,7 @@
     		<a href="index.php?action=readAll&controller=produit" style="border: 1px solid black;">		Liste des produits
     		</a>
     		<a href="index.php?action=readAll&controller=client">Liste des clients</a>
-            <a href="index.php?action=readAll&controller=commande">Liste des produits</a>
+            <a href="index.php?action=readAll&controller=commande">Liste des commandes</a>
     	</nav>
 <?php
 // Si $controleur='voiture' et $view='list',

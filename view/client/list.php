@@ -12,4 +12,8 @@ echo "<a href=\"".
 "index.php?nomFonction=create&arg1=&controller=client\">".
 "Créer un nouveau Client".
 "</a>";
+echo "<br><a href=\"".
+"index.php?nomFonction=connect&arg1=&controller=client\">".
+"Se connecter".
+"</a>";
 ?>

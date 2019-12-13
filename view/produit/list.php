@@ -13,8 +13,7 @@
             '.</p>';
     }
     echo "<a href=\"".
-    "index.php?nomFonction=create&arg1=".
-    "\">".
+    "index.php?nomFonction=create&arg1=&controller=produit\">".
     "Créer un nouveau Produit".
     "</a>";
 
